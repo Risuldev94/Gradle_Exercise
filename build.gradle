@@ -12,7 +12,7 @@ dependencies {
 
 task copyWebsite(type: Copy) {
     from 'src/main/resources'
-    into '/docs'
+    into 'docs'
 }
 tasks.named('run'){
     dependsOn 'copyWebsite'
