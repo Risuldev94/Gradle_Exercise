@@ -25,3 +25,10 @@ jar {
         attributes 'Main-Class': 'com.example.Main'  // This tells Java where to start execution
     }
 }
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+test {
+    useTestNG()
+}
